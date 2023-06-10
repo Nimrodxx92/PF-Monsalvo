@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: urbanist;
+}
+
+/* HEADER */
+
+#header {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.logo img {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-nav a:hover {
+    color: #f81793;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* HEADER RESPONSIVE */
+
+@media (min-width: 300px) and (max-width: 991px) {
+    .navbar-nav li {
+        margin-top: 30px;
+        text-align: end;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+}
+
+/* MAIN - SECTION */
+
+.hero {
+    background-image: url(../images/sideralis/fondo-sideralis.jpg);
+    background-size: 125%;
+    padding: 10.7em;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #f81793;
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+.intro p {
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 0.7em;
+    margin-top: 1.3em;
+    font-weight: bold;
+}
+
+.btnIntro a button {
+    background-color: #f81793;
+    color: rgb(0, 0, 0);
+    padding: 1em 2.8em;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.btnIntro a button:hover {
+    background-color: #7e1a51;
+    cursor: pointer;
+}
+
+/* MAIN SECTION HERO RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .hero {
+        padding: 9em;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1.3em;
+        margin-top: 1.3em;
+        font-weight: bold;
+    }
+
+    .btnIntro {
+        margin-top: 1em;
+    }
+
+    .btnIntro button {
+        padding: 1em 2.7em;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .hero {
+        padding: 7em;
+        background-size: 125%;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2.4em;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+        margin-top: 1.3em;
+        font-weight: bold;
+    }
+
+    .btnIntro {
+        margin-top: 0.8em;
+    }
+
+    .btnIntro a button {
+        padding: 0.9em 2.5em;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .hero {
+        padding: 7em;
+        background-size: 130%;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2.4em;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+        margin-top: 1.3em;
+        font-weight: bold;
+    }
+
+    .btnIntro {
+        margin-top: 0.8em 2.3em;
+    }
+
+    .btnIntro a button {
+        padding: 0.8em 2.3em;
+    }
+}
+
+@media (min-width: 671px) and (max-width: 800px) {
+    .hero {
+        padding: 5em;
+        background-size: 140%;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2.2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+        margin-top: 1.3em;
+        font-weight: bold;
+    }
+
+    .btnIntro {
+        margin-top: 0.5em;
+    }
+
+    .btnIntro a button {
+        padding: 0.7em 2.2em;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    .hero {
+        padding: 2.7em;
+        background-size: 150%;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    .btnIntro {
+        margin-top: 0.3em;
+    }
+
+    .btnIntro a button {
+        padding: 0.7em 2em;
+    }
+}
+
+/* MAIN ARTICLE CARDS BOOTSTRAP C/FLEX */
+
+.sub-hero {
+    background-image: url(../images/fondos/universo-fondo.jpg);
+    background-size: contain;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.card-text {
+    margin-block-end: 1.5em;
+}
+
+.btn-card {
+    background-color: #f81793;
+    color: white;
+    padding: 0.6em 2em;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-card:hover {
+    background-color: #7e1a51;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN ARTICLE CARDS RESPONSIVE */
+
+@media (max-width: 800px) {
+    .sub-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 799px) {
+    .card {
+        max-width: 14rem;
+    }
+
+    .card-body h5 {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .card-body p {
+        font-size: 0.9em;
+    }
+}
+
+/* MAIN SECTION DESTACADOS C/FLEX */
+
+.destacados {
+    background-image: url(../images/fondos/universo-fondo.jpg);
+    background-size: contain;
+    padding: 20px;
+}
+
+.destacados h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.items-destacados {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.item-title {
+    color: #f74eb3;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.item-text {
+    color: white;
+    font-size: 1em;
+}
+
+.item img {
+    width: 320px;
+    margin: 20px;
+}
+
+.item img:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 1100px) {
+    .item img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .items-destacados {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .item-title {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:810px) {
+    .item-text {
+        display: none;
+    }
+}
+
+/* NEWSLATTER */
+
+.newsletter {
+    background-image: url(../images/fondos/universo-sideral.jpg);
+    background-size: cover;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.newsletter p {
+    color: #ffffff;
+    margin-bottom: 1.5em;
+    margin-top: 5px;
+}
+
+.newsletter h5 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.newsletter .form-container {
+    margin-top: 1.5em;
+}
+
+.newsletter input.input-large {
+    width: 60%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: none;
+}
+
+.newsletter button {
+    background-color: #0becec;
+    color: #000;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #1a4fc2;
+    color: white;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer img {
+    width: 30px;
+    margin-top: 10px;
+}
+
+#footer p {
+    margin-top: 10px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn {
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* CATÁLOGO */
+
+.productos-intro {
+    text-align: center;
+    background-image: url(../images/fondos/universo-fondo.jpg);
+    background-size: contain;
+    padding: 15px;
+}
+
+.productos-intro h1 {
+    color: #f74eb3;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.productos-intro p {
+    line-height: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../images/fondos/universo-fondo.jpg);
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/fondos/verde-univ.jpg);
+    background-size: cover;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px 8px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.gallery-item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* PPRODUCTOS RESPOSIVE MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    @media (min-width: 300px) and (max-width: 550px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-item h3 {
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .productos-intro p {
+        line-height: 15px;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+.botones-catalogo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/fondos/universo-fondo.jpg);
+}
+
+.btnCatalog {
+    background-color: #ff73c7;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 20px 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.btn-close {
+    color: white;
+}
+
+.modal-content {
+    color: white;
+    font-size: 1.2em;
+    background-image: url(../images/fondos/botones-gallery.jpg);
+    background-size: cover;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.btnModal {
+    background-color: #0becec;
+    border: none;
+    border-radius: 15px;
+    padding: 2px 10px;
+    color: #000;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .catalogo-title p {
+        line-height: 20px;
+    }
+
+    .btnCatalog {
+        padding: 7px 5px;
+        text-align: center;
+        margin: 13px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* AYUDA HTML */
+
+#help {
+    background-image: url(..//images/fondos/space-space-art-nebula-atmosphere-universe-astronomy-76715-wallhere.com.png);
+}
+
+.titleHelp {
+    text-align: center;
+}
+
+.titleHelp h1 {
+    text-align: center;
+    padding: 40px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.accordion {
+    width: 60em;
+    margin: auto;
+}
+
+.accordion .accordion-item {
+    border: 2px solid #f74eb3;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.accordion .accordion-button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.accordion .accordion-collapse {
+    background-color: #d457a2;
+    padding: 5px;
+}
+
+.accordion-body h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.title-talles h5 {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.talles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.table {
+    margin-top: 10px;
+    width: 800px;
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+.headerTable {
+    background-color: #f74eb3;
+    font-weight: bold;
+}
+
+@media (max-width: 1160px) {
+
+    .table,
+    .accordion {
+        max-width: 90%;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
+
+/* CONTACTO HTML */
+
+#contacto {
+    text-align: center;
+    background-image: url(../images/fondos/universo-fondo.jpg);
+    background-size: cover;
+}
+
+.contacto-title h1 {
+    color: #f74eb3;
+    font-weight: bold;
+    padding: 20px;
+  
+}
+
+.contacto-title p {
+    line-height: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.formulas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-block-end: 40px;
+}
+
+.datos {
+    background-color: #f74eb3;
+    padding: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.redes-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes-contacto img {
+    width: 40px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.datos h3 {
+    color: black;
+    font-size: 30px;
+}
+
+.items-formulario {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/fondos/space-space-art-nebula-atmosphere-universe-astronomy-76715-wallhere.com.png);
+    padding: 60px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.items-formulario input::placeholder,
+.items-formulario textarea::placeholder {
+    font-size: 14px;
+    text-indent: 5px;
+}
+
+.items-formulario input[type="button"] {
+    background-color: #f81793;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.items-formulario input[type="button"]:hover {
+    background-color: #0b159b;
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+    .formulas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 70%;
+        margin: 0 auto;
+        margin-block-end: 40px;
+    }
+
+    .datos {
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .items-formulario {
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .contacto-title p {
+        line-height: 25px;
+    }
+}
+
+/* NOSOTROS HTML */
+
+#nosotros {
+    background-image: url(../images/fondos/universo-fondo.jpg);
+}
+
+#nosotros h1 {
+    text-align: center;
+    color: #f74eb3;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.sideralis-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 0 50px;
+}
+
+.txt {
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+}
+
+.img-sideralis img {
+    border-radius: 30px;
+}
+
+.colors-insp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(167, 163, 163);
+    margin: 0 50px;
+    margin-top: 40px;
+    margin-block-end: 40px;
+}
+
+.text-colors {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+.text-colors h3 {
+    font-weight: bold;
+    color: black;
+}
+
+.text-colors p {
+    font-size: 19px;
+    color: black;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.colors img {
+    width: 350px;
+    height: 200px;
+}
+
+@media (min-width: 300px) and (max-width: 1183px) {
+    .sideralis-intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txt {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .img-sideralis img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1080px) {
+    .colors-insp {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .colors img {
+        display: none;
+    }
+
+    .text-colors h3 {
+        font-size: 18px;
+    }
+
+    .text-colors p {
+        font-size: 15px;
+    }
+}
