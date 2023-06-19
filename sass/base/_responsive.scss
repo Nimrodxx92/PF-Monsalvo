@@ -1,11 +1,13 @@
 /* HEADER */
 
 @media (min-width: 300px) and (max-width: 800px) {
-    .navbar {
-        .container-fluid {
-            .logo {
-                img {
-                    width: 150px;
+    #header {
+        .navbar {
+            .container-fluid {
+                .logo {
+                    img {
+                        width: 115px;
+                    }
                 }
             }
         }
@@ -13,37 +15,42 @@
 }
 
 @media (min-width: 300px) and (max-width: 991px) {
-    .collapse {
-        .navbar-nav {
-            li {
-                margin-top: 30px;
-                text-align: end;
+    #header {
+        .collapse {
+            ul {
+                li {
+                    margin-top: 30px;
+                    text-align: end;
+                }
             }
         }
     }
 }
 
+
+
+
 /* INICIO */
-@media (min-width: 300px) and (max-width: 373px) {
+@media (min-width: 300px) and (max-width: 400px) {
     #intro {
         .hero {
-            padding: 2.7em;
+            padding: 3.4em;
             background-size: cover;
             text-align: center;
 
             .intro {
                 h1 {
-                    font-size: 1.7em;
+                    font-size: 1.9em;
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 1.1em;
                     line-height: 1.2em;
                 }
             }
 
             .btnIntro {
-                font-size: 11px;
+                font-size: 18px;
 
                 a {
                     button {
@@ -55,26 +62,26 @@
     }
 }
 
-@media (min-width: 374px) and (max-width: 500px) {
+@media (min-width: 401px) and (max-width: 500px) {
     #intro {
         .hero {
-            padding: 2.7em;
+            padding: 3.6em;
             background-size: cover;
             text-align: center;
 
             .intro {
                 h1 {
-                    font-size: 1.7em;
+                    font-size: 1.8em;
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 1em;
                     line-height: 1.2em;
                 }
             }
 
             .btnIntro {
-                font-size: 11px;
+                font-size: 18px;
 
                 a {
                     button {
@@ -90,22 +97,22 @@
     #intro {
         .hero {
             padding: 2.9em;
-            background-size: 132%;
+            background-size: 150%;
             text-align: center;
 
             .intro {
                 h1 {
-                    font-size: 1.7em;
+                    font-size: 1.9em;
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 1.1em;
                     line-height: 1.2em;
                 }
             }
 
             .btnIntro {
-                font-size: 11px;
+                font-size: 18px;
 
                 a {
                     button {
@@ -130,13 +137,13 @@
                 }
 
                 p {
-                    font-size: 1em;
+                    font-size: 1.3em;
                     line-height: 1em;
                 }
             }
 
             .btnIntro {
-                font-size: 0.7em;
+                font-size: 20px;
 
                 a {
                     button {
@@ -157,17 +164,17 @@
 
             .intro {
                 h1 {
-                    font-size: 2.2em;
+                    font-size: 2.4em;
                 }
 
                 p {
-                    font-size: 1em;
+                    font-size: 1.3em;
                     line-height: 1em;
                 }
             }
 
             .btnIntro {
-                font-size: 0.8em;
+                font-size: 20px;
 
                 a {
                     button {
@@ -198,7 +205,7 @@
             }
 
             .btnIntro {
-                font-size: 0.8em;
+                font-size: 15px;
 
                 a {
                     button {
@@ -295,10 +302,10 @@
 }
 
 /* PPRODUCTOS RESPOSIVE MEDIA QUERY */
-@media (min-width: 300px) and (max-width: 709px) {
+@media (min-width: 300px) and (max-width: 450px) {
     #catalogo {
         .gallery {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 100%);
 
             .gallery-item {
                 h3 {
@@ -307,10 +314,10 @@
                 }
 
                 p {
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                     top: 5%;
                     right: 15px;
-                    width: 29%;
+                    width: 30%;
                     padding: 5px;
                 }
             }
@@ -319,10 +326,16 @@
 }
 
 
-@media (min-width: 710px) and (max-width: 850px) {
+@media (min-width: 451px) and (max-width: 850px) {
     #catalogo {
+        .productos-title {
+            p {
+                line-height: 25px;
+            }
+        }
+
         .gallery {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 55%);
 
             .gallery-item {
                 h3 {
@@ -342,10 +355,10 @@
     }
 }
 
-@media (min-width: 851px) and (max-width: 1140px) {
+@media (min-width: 690px) and (max-width: 940px) {
     #catalogo {
         .gallery {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 35%);
 
             .gallery-item {
                 h3 {
@@ -402,7 +415,7 @@
 
         .table,
         .accordion {
-            max-width: 70%;
+            max-width: 90%;
         }
 
         .table {
@@ -421,6 +434,7 @@
             width: 70%;
             margin: 0 auto;
             border-radius: 0;
+            margin-block-end: 40px;
 
             .datos {
                 padding: 30px;
@@ -438,41 +452,63 @@
 /* NOSOTROS */
 
 @media (min-width: 300px) and (max-width: 1183px) {
-    .sideralis-intro {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+    #nosotros {
+        .sideralis-intro {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
-    .txt {
-        font-size: 16px;
-        padding: 10px;
-    }
+            .txt {
+                font-size: 18px;
+            }
 
-    .img-sideralis img {
-        width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .colors-insp {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+            margin: 0 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+            .text-colors {
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .colors {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
-@media (min-width: 300px) and (max-width: 1080px) {
-    .colors-insp {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        padding: 10px;
-        margin: 0 20px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+/* Newslatter */
+@media (min-width: 300px) and (max-width: 768px) {
+    .newsletter {
+        h6 {
+            font-size: 20px;
+        }
 
-    .colors img {
-        display: none;
-    }
-
-    .text-colors h3 {
-        font-size: 18px;
-    }
-
-    .text-colors p {
-        font-size: 15px;
+        .form-container {
+            .input-large {
+                width: 80%;
+            }
+        }
     }
 }

@@ -249,7 +249,7 @@
 
 #catalogo {
   background-image: url(../images/fondos/fondo-html.jpg);
-  background-size: cover;
+  background-size: contain;
 }
 #catalogo .productos-title {
   padding: 15px;
@@ -351,7 +351,7 @@
 
 #nosotros {
   background-image: url(../images/fondos/fondo-html.jpg);
-  background-size: cover;
+  background-size: contain;
 }
 #nosotros .title-nosotros {
   padding: 15px;
@@ -420,7 +420,7 @@
 }
 
 #help {
-  background-image: url(/images/fondos/fondo-html.jpg);
+  background-image: url(../images/fondos/fondo-html.jpg);
   background-size: contain;
 }
 #help .title-help {
@@ -495,7 +495,7 @@
 #contacto {
   text-align: center;
   background-image: url(../images/fondos/fondo-html.jpg);
-  background-size: cover;
+  background-size: contain;
 }
 #contacto .contacto-title {
   padding: 15px;
@@ -581,52 +581,52 @@
 
 /* HEADER */
 @media (min-width: 300px) and (max-width: 800px) {
-  .navbar .container-fluid .logo img {
-    width: 150px;
+  #header .navbar .container-fluid .logo img {
+    width: 115px;
   }
 }
 @media (min-width: 300px) and (max-width: 991px) {
-  .collapse .navbar-nav li {
+  #header .collapse ul li {
     margin-top: 30px;
     text-align: end;
   }
 }
 /* INICIO */
-@media (min-width: 300px) and (max-width: 373px) {
+@media (min-width: 300px) and (max-width: 400px) {
   #intro .hero {
-    padding: 2.7em;
+    padding: 3.4em;
     background-size: cover;
     text-align: center;
   }
   #intro .hero .intro h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   #intro .hero .intro p {
-    font-size: 0.8em;
+    font-size: 1.1em;
     line-height: 1.2em;
   }
   #intro .hero .btnIntro {
-    font-size: 11px;
+    font-size: 18px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.5em 1.5em;
   }
 }
-@media (min-width: 374px) and (max-width: 500px) {
+@media (min-width: 401px) and (max-width: 500px) {
   #intro .hero {
-    padding: 2.7em;
+    padding: 3.6em;
     background-size: cover;
     text-align: center;
   }
   #intro .hero .intro h1 {
-    font-size: 1.7em;
+    font-size: 1.8em;
   }
   #intro .hero .intro p {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.2em;
   }
   #intro .hero .btnIntro {
-    font-size: 11px;
+    font-size: 18px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.5em 1.5em;
@@ -635,18 +635,18 @@
 @media (min-width: 501px) and (max-width: 600px) {
   #intro .hero {
     padding: 2.9em;
-    background-size: 132%;
+    background-size: 150%;
     text-align: center;
   }
   #intro .hero .intro h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   #intro .hero .intro p {
-    font-size: 0.8em;
+    font-size: 1.1em;
     line-height: 1.2em;
   }
   #intro .hero .btnIntro {
-    font-size: 11px;
+    font-size: 18px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.5em 1.5em;
@@ -662,11 +662,11 @@
     font-size: 2.1em;
   }
   #intro .hero .intro p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1em;
   }
   #intro .hero .btnIntro {
-    font-size: 0.7em;
+    font-size: 20px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.7em 2.2em;
@@ -679,14 +679,14 @@
     text-align: center;
   }
   #intro .hero .intro h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
   #intro .hero .intro p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1em;
   }
   #intro .hero .btnIntro {
-    font-size: 0.8em;
+    font-size: 20px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.7em 2.2em;
@@ -706,7 +706,7 @@
     line-height: 1em;
   }
   #intro .hero .btnIntro {
-    font-size: 0.8em;
+    font-size: 15px;
   }
   #intro .hero .btnIntro a button {
     padding: 0.9em 2.3em;
@@ -763,25 +763,28 @@
   }
 }
 /* PPRODUCTOS RESPOSIVE MEDIA QUERY */
-@media (min-width: 300px) and (max-width: 709px) {
+@media (min-width: 300px) and (max-width: 450px) {
   #catalogo .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 100%);
   }
   #catalogo .gallery .gallery-item h3 {
     text-align: center;
     font-size: 0.8em;
   }
   #catalogo .gallery .gallery-item p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     top: 5%;
     right: 15px;
-    width: 29%;
+    width: 30%;
     padding: 5px;
   }
 }
-@media (min-width: 710px) and (max-width: 850px) {
+@media (min-width: 451px) and (max-width: 850px) {
+  #catalogo .productos-title p {
+    line-height: 25px;
+  }
   #catalogo .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 55%);
   }
   #catalogo .gallery .gallery-item h3 {
     text-align: center;
@@ -795,9 +798,9 @@
     padding: 5px;
   }
 }
-@media (min-width: 851px) and (max-width: 1140px) {
+@media (min-width: 690px) and (max-width: 940px) {
   #catalogo .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 35%);
   }
   #catalogo .gallery .gallery-item h3 {
     text-align: center;
@@ -832,7 +835,7 @@
 @media (max-width: 1160px) {
   #help .table,
   #help .accordion {
-    max-width: 70%;
+    max-width: 90%;
   }
   #help .table {
     font-size: 12px;
@@ -846,6 +849,8 @@
     width: 70%;
     margin: 0 auto;
     border-radius: 0;
+    -webkit-margin-after: 40px;
+            margin-block-end: 40px;
   }
   #contacto .formulas .datos {
     padding: 30px;
@@ -858,21 +863,18 @@
 }
 /* NOSOTROS */
 @media (min-width: 300px) and (max-width: 1183px) {
-  .sideralis-intro {
+  #nosotros .sideralis-intro {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .txt {
-    font-size: 16px;
-    padding: 10px;
+  #nosotros .sideralis-intro .txt {
+    font-size: 18px;
   }
-  .img-sideralis img {
+  #nosotros .sideralis-intro img {
     width: 100%;
   }
-}
-@media (min-width: 300px) and (max-width: 1080px) {
-  .colors-insp {
+  #nosotros .colors-insp {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 10px;
@@ -880,14 +882,28 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  .colors img {
-    display: none;
+  #nosotros .colors-insp .text-colors h3 {
+    font-size: 22px;
   }
-  .text-colors h3 {
-    font-size: 18px;
-  }
-  .text-colors p {
+  #nosotros .colors-insp .text-colors p {
     font-size: 15px;
+  }
+  #nosotros .colors-insp .colors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  #nosotros .colors-insp .colors img {
+    width: 100%;
+  }
+}
+/* Newslatter */
+@media (min-width: 300px) and (max-width: 768px) {
+  .newsletter h6 {
+    font-size: 20px;
+  }
+  .newsletter .form-container .input-large {
+    width: 80%;
   }
 }
 /* Título intro */
