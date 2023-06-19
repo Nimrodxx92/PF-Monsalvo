@@ -1,0 +1,88 @@
+#help {
+    background-image: url(/images/fondos/fondo-html.jpg);
+    background-size: contain;
+
+    .title-help {
+        padding: 15px;
+
+        h1 {
+            @include titlePages;
+            margin-bottom: 40px;
+        }
+    }
+
+    .accordionHelp {
+        text-align: center;
+
+        .accordion {
+            width: 60em;
+            margin: auto;
+
+            .accordion-item {
+                border: 2px solid $colorPrincipal;
+                border-radius: 4px;
+                margin-bottom: 8px;
+
+                .accordion-header {
+                    .accordion-button {
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
+                }
+
+                .accordion-collapse {
+                    background-color: $colorFont;
+                    padding: 5px;
+
+                    .accordion-body {
+                        h6 {
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            color: black;
+                        }
+
+                        p {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .talles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+
+        .title-talles {
+            h5 {
+                margin-bottom: 20px;
+                color: white;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+        }
+
+        .table {
+            margin-top: 10px;
+            width: 800px;
+            border: 1px solid #000000;
+            background-color: white;
+            text-align: center;
+
+            .headerTable {
+                background-color: $colorFont;
+                font-weight: bold;
+
+                .table th,
+                .table td {
+                    padding: 10px;
+                    border-bottom: 1px solid #000000;
+                }
+            }
+        }
+    }
+}

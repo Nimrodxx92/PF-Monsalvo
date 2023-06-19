@@ -1,0 +1,42 @@
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+
+    .whatsapp-btn {
+        position: fixed;
+        z-index: 999;
+        right: 10px;
+        bottom: 10px;
+
+        a {
+            .whats {
+                width: 50px;
+
+                &:hover {
+                    -webkit-animation: botonWhatsapp 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                    animation: botonWhatsapp 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        img {
+            width: 30px;
+            margin-top: 10px;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+ 

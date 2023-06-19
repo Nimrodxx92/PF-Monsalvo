@@ -1,0 +1,478 @@
+/* HEADER */
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .navbar {
+        .container-fluid {
+            .logo {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+    .collapse {
+        .navbar-nav {
+            li {
+                margin-top: 30px;
+                text-align: end;
+            }
+        }
+    }
+}
+
+/* INICIO */
+@media (min-width: 300px) and (max-width: 373px) {
+    #intro {
+        .hero {
+            padding: 2.7em;
+            background-size: cover;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 1.7em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    line-height: 1.2em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 11px;
+
+                a {
+                    button {
+                        padding: 0.5em 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 374px) and (max-width: 500px) {
+    #intro {
+        .hero {
+            padding: 2.7em;
+            background-size: cover;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 1.7em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    line-height: 1.2em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 11px;
+
+                a {
+                    button {
+                        padding: 0.5em 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    #intro {
+        .hero {
+            padding: 2.9em;
+            background-size: 132%;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 1.7em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    line-height: 1.2em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 11px;
+
+                a {
+                    button {
+                        padding: 0.5em 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    #intro {
+        .hero {
+            padding: 5em;
+            background-size: 140%;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 2.1em;
+                }
+
+                p {
+                    font-size: 1em;
+                    line-height: 1em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 0.7em;
+
+                a {
+                    button {
+                        padding: 0.7em 2.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    #intro {
+        .hero {
+            padding: 7em;
+            background-size: 130%;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 2.2em;
+                }
+
+                p {
+                    font-size: 1em;
+                    line-height: 1em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 0.8em;
+
+                a {
+                    button {
+                        padding: 0.7em 2.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    #intro {
+        .hero {
+            padding: 7em;
+            background-size: 125%;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 2.3em;
+                }
+
+                p {
+                    font-size: 1.1em;
+                    line-height: 1em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 0.8em;
+
+                a {
+                    button {
+                        padding: 0.9em 2.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    #intro {
+        .hero {
+            padding: 9em;
+            text-align: center;
+
+            .intro {
+                h1 {
+                    font-size: 2.5em;
+                }
+
+                p {
+                    font-size: 1.3em;
+                    line-height: 1em;
+                }
+            }
+
+            .btnIntro {
+                font-size: 1em;
+
+                a {
+                    button {
+                        padding: 1em 2.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MAIN ARTICLE CARDS */
+@media (max-width: 800px) {
+    .sub-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+            max-width: 14rem;
+
+            .card-body {
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+/* NUEVOS DISEÑOS */
+@media screen and (max-width: 800px) {
+    #intro {
+        .newsDesign {
+            .title__design {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+
+            .flex-container {
+                .item__design {
+                    width: 40%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1320px) {
+    #intro {
+        .flex-container {
+            .item__design {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* PPRODUCTOS RESPOSIVE MEDIA QUERY */
+@media (min-width: 300px) and (max-width: 709px) {
+    #catalogo {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+
+            .gallery-item {
+                h3 {
+                    text-align: center;
+                    font-size: 0.8em;
+                }
+
+                p {
+                    font-size: 0.7em;
+                    top: 5%;
+                    right: 15px;
+                    width: 29%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 710px) and (max-width: 850px) {
+    #catalogo {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+
+            .gallery-item {
+                h3 {
+                    text-align: center;
+                    font-size: 0.9em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    top: 5%;
+                    right: 15px;
+                    width: 29%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1140px) {
+    #catalogo {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+
+            .gallery-item {
+                h3 {
+                    text-align: center;
+                    font-size: 1.1em;
+                }
+
+                p {
+                    font-size: 1em;
+                    top: 5%;
+                    right: 15px;
+                    width: 29%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    #catalogo {
+        .productos-title {
+            p {
+                line-height: 20px;
+                font-size: 15px;
+            }
+        }
+
+        .botones-catalogo {
+            .btnCatalog {
+                padding: 4px 5px;
+                text-align: center;
+                margin: 20px 12px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+        }
+
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    max-width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+/* AYUDA */
+
+@media (max-width: 1160px) {
+    #help {
+
+        .table,
+        .accordion {
+            max-width: 70%;
+        }
+
+        .table {
+            font-size: 12px;
+        }
+    }
+}
+
+/* CONTACTO */
+
+@media (min-width: 300px) and (max-width: 890px) {
+    #contacto {
+        .formulas {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+            border-radius: 0;
+
+            .datos {
+                padding: 30px;
+                border-radius: 15px;
+            }
+        }
+
+        .items-formulario {
+            padding: 30px;
+            border-radius: 15px;
+        }
+    }
+}
+
+/* NOSOTROS */
+
+@media (min-width: 300px) and (max-width: 1183px) {
+    .sideralis-intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txt {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .img-sideralis img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1080px) {
+    .colors-insp {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .colors img {
+        display: none;
+    }
+
+    .text-colors h3 {
+        font-size: 18px;
+    }
+
+    .text-colors p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,150 @@
+#intro {
+    .hero {
+        background-image: url(../images/sideralis/fondo-sideralis.jpg);
+        background-size: 125%;
+        padding: 10.7em;
+        text-align: center;
+
+        .intro {
+            h1 {
+                color: $colorPrincipal;
+                font-size: 2.7em;
+                font-weight: bold;
+                -webkit-animation: title 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: title 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+
+            p {
+                color: white;
+                font-size: 1.5em;
+                line-height: 0.7em;
+                margin-top: 1.3em;
+                font-weight: bold;
+                -webkit-animation: txt-intro 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+                animation: txt-intro 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+            }
+        }
+
+        .btnIntro {
+            a {
+                button {
+                    @include btn;
+                    background-color: $colorPrincipal;
+                    padding: 1em 2.8em;
+                    margin-top: 1.5em;
+                    -webkit-animation: button-intro 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+                    animation: button-intro 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+
+                    &:hover {
+                        background-image: linear-gradient(225deg, $colorSecundario 0%, $colorPrincipal 100%);
+                        text-decoration-line: line-through;
+                        color: rgb(9, 152, 177);
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-hero {
+        background-image: url(../images/fondos/fondo-html.jpg);
+        background-size: contain;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+        .card {
+            width: 20em;
+
+            &:hover {
+                animation: cards 1s ease 0s 1 normal forwards;
+            }
+
+            .card-body {
+                text-align: center;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 1.6em;
+                    color: rgb(7, 1, 37);
+
+                    &:hover {
+                        text-decoration-line: line-through;
+                        color: $colorPrincipal;
+                    }
+                }
+
+                .card-text {
+                    margin-block-end: 1.5em;
+                    color: rgb(22, 21, 21);
+                }
+
+                .btn-card {
+                    @include btn;
+                    background-color: $colorPrincipal;
+                    padding: 0.6em 2em;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-image: linear-gradient(225deg, rgb(0, 0, 0) 0%, $colorBtn2 100%);
+                        text-decoration-line: line-through;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsDesign {
+        background-image: url(../images/fondos/fondo-html.jpg);
+        background-size: contain;
+        padding-bottom: 50px;
+
+        .title__design {
+            margin-bottom: 30px;
+            padding-top: 20px;
+
+            h2 {
+                @include subtitlePages;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+
+            .item__design {
+                position: relative;
+
+                img {
+                    width: 300px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: transform 0.3s ease-in-out;
+                    }
+                }
+
+                h4 {
+                    text-align: center;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 5px;
+
+                    &:hover {
+                        text-decoration-line: underline line-through;
+                        color: $colorBtn2;
+                    }
+                }
+            }
+        }
+    }
+}

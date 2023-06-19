@@ -1,0 +1,94 @@
+#contacto {
+    text-align: center;
+    background-image: url(../images/fondos/fondo-html.jpg);
+    background-size: cover;
+
+    .contacto-title {
+        padding: 15px;
+
+        h1 {
+            @include titlePages;
+        }
+
+        p {
+            color: white;
+            margin-top: 12px;
+            font-size: $sizePages;
+            -webkit-animation: txt-intro 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+            animation: txt-intro 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+        }
+    }
+
+    .formulas {
+        display: flex;
+        justify-content: center;
+        margin-block-end: 40px;
+
+        .datos {
+            background-image: linear-gradient(225deg, rgb(250, 250, 250) 0%, rgb(73, 1, 37) 0%, rgb(202, 43, 141) 100%);
+            padding: 50px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: white;
+            font-size: 17.5px;
+
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .redes-contacto {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                a {
+                    img {
+                        width: 40px;
+                        border-radius: 8px;
+                        margin-top: 15px;
+
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .items-formulario {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/fondos/space-space-art-nebula-atmosphere-universe-astronomy-76715-wallhere.com.png);
+        padding: 50px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        color: white;
+
+        input,
+        textarea {
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="button"] {
+            background-color: $colorPrincipal;
+            color: #ffffff;
+            width: 150px;
+            height: 40px;
+            border: none;
+
+            &:hover {
+                background-color: #8d0354;
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 14px;
+            text-indent: 5px;
+        }
+    }
+}
