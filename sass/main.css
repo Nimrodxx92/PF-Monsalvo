@@ -762,7 +762,7 @@
     width: 100%;
   }
 }
-/* PPRODUCTOS RESPOSIVE MEDIA QUERY */
+/* CATÁLOGO */
 @media (min-width: 300px) and (max-width: 450px) {
   #catalogo .gallery {
     grid-template-columns: repeat(1, 100%);
@@ -897,7 +897,7 @@
     width: 100%;
   }
 }
-/* Newslatter */
+/* NEWSLATTER */
 @media (min-width: 300px) and (max-width: 768px) {
   .newsletter h6 {
     font-size: 20px;
