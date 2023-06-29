@@ -26,13 +26,14 @@
 #header .navbar .container-fluid .navbar-toggler span {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-#header .navbar .container-fluid .collapse .navbar-nav li a {
+#header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-decoration: none;
   margin: 20px;
   font-size: 20px;
   color: white;
+  margin: 0 12px;
 }
-#header .navbar .container-fluid .collapse .navbar-nav li a:hover {
+#header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #f81793;
 }
 
@@ -62,8 +63,9 @@
   border: none;
   border-radius: 5px;
 }
-.newsletter .form-container .input-large:hover {
-  background-color: #f7c0e2;
+.newsletter .form-container .input-large:focus {
+  outline: none;
+  box-shadow: 0 0 15px #f81793;
 }
 .newsletter .form-container button {
   border: none;
@@ -71,14 +73,14 @@
   font-weight: bold;
   text-decoration: none;
   color: white;
-  background-color: #f74eb3;
-  color: #000;
+  background-image: linear-gradient(#ff61d2, #fe9090);
+  color: rgb(41, 7, 41);
   padding: 0.8em 2em;
   margin-left: 10px;
   cursor: pointer;
 }
 .newsletter .form-container button:hover {
-  background-image: linear-gradient(225deg, #50002b 0%, #f81793 100%);
+  background-image: linear-gradient(#662d8c, #ed1e79);
   text-decoration-line: line-through;
   color: white;
 }
@@ -141,15 +143,16 @@
   font-weight: bold;
   text-decoration: none;
   color: white;
-  background-color: #f81793;
+  background-image: linear-gradient(#ffdbd5, #f81793);
+  color: #300131;
   padding: 1em 2.8em;
   margin-top: 1.5em;
   animation: button-intro 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
 }
 #intro .hero .btnIntro a button:hover {
-  background-image: linear-gradient(225deg, #50002b 0%, #f81793 100%);
+  background-image: linear-gradient(#662d8c, #ed1e79);
   text-decoration-line: line-through;
-  color: rgb(9, 152, 177);
+  color: white;
 }
 #intro .sub-hero {
   background-image: url(../images/fondos/fondo-html.jpg);
@@ -192,7 +195,8 @@
   text-decoration: none;
 }
 #intro .sub-hero .card .card-body .btn-card:hover {
-  background-image: linear-gradient(225deg, rgb(0, 0, 0) 0%, #0becec 100%);
+  background-image: linear-gradient(225deg, #2e3192 0%, #1bffff 100%);
+  color: rgb(41, 7, 41);
   text-decoration-line: line-through;
 }
 #intro .newsDesign {
@@ -244,7 +248,7 @@
 }
 #intro .newsDesign .flex-container .item__design h4:hover {
   text-decoration-line: underline line-through;
-  color: #0becec;
+  color: #1bffff;
 }
 
 #catalogo {
@@ -302,7 +306,6 @@
   color: white;
   text-align: center;
   font-size: 1.4em;
-  text-decoration: underline;
 }
 #catalogo .gallery .gallery-item p {
   font-size: 18px;
@@ -341,7 +344,7 @@
   font-weight: bold;
 }
 #catalogo .modal .modal-dialog .modal-content .modal-footer .btnModal {
-  background-color: #0becec;
+  background-color: #1bffff;
   border: none;
   border-radius: 15px;
   padding: 2px 10px;
@@ -451,7 +454,7 @@
   color: #ffffff;
 }
 #help .accordionHelp .accordion .accordion-item .accordion-collapse {
-  background-color: #f74eb3;
+  background-image: linear-gradient(#f81793, #fe9090);
   padding: 5px;
 }
 #help .accordionHelp .accordion .accordion-item .accordion-collapse .accordion-body h6 {
@@ -520,7 +523,7 @@
           margin-block-end: 40px;
 }
 #contacto .formulas .datos {
-  background-image: linear-gradient(225deg, rgb(250, 250, 250) 0%, rgb(73, 1, 37) 0%, rgb(202, 43, 141) 100%);
+  background-image: linear-gradient(#662d8c, #ed1e79);
   padding: 50px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -554,10 +557,25 @@
   border-bottom-right-radius: 30px;
   color: white;
 }
+#contacto .items-formulario input {
+  height: 30px;
+}
 #contacto .items-formulario input,
 #contacto .items-formulario textarea {
   margin-bottom: 20px;
   border-radius: 8px;
+}
+#contacto .items-formulario input:not(:-moz-placeholder-shown), #contacto .items-formulario textarea:not(:-moz-placeholder-shown) {
+  padding: 10px;
+}
+#contacto .items-formulario input:not(:placeholder-shown),
+#contacto .items-formulario textarea:not(:placeholder-shown) {
+  padding: 10px;
+}
+#contacto .items-formulario input:focus,
+#contacto .items-formulario textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fe90af;
 }
 #contacto .items-formulario input[type=button] {
   background-color: #f81793;
@@ -586,8 +604,10 @@
   }
 }
 @media (min-width: 300px) and (max-width: 991px) {
-  #header .collapse ul li {
-    margin-top: 30px;
+  #header .navbar-collapse .navbar-nav .nav-item {
+    margin-top: 20px;
+  }
+  #header .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: end;
   }
 }

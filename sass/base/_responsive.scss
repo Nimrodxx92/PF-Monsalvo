@@ -15,11 +15,13 @@
 
 @media (min-width: 300px) and (max-width: 991px) {
     #header {
-        .collapse {
-            ul {
-                li {
-                    margin-top: 30px;
-                    text-align: end;
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    margin-top: 20px;
+                    .nav-link {
+                        text-align: end;
+                    }
                 }
             }
         }

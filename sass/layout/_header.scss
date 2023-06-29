@@ -16,14 +16,15 @@
                 }
             }
 
-            .collapse {
+            .navbar-collapse {
                 .navbar-nav {
-                    li {
-                        a {
+                    .nav-item {
+                        .nav-link {
                             text-decoration: none;
                             margin: 20px;
                             font-size: 20px;
                             color: white;
+                            margin: 0 12px;
 
                             &:hover {
                                 color: $colorPrincipal;

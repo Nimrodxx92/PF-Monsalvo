@@ -31,7 +31,7 @@
                 }
 
                 .accordion-collapse {
-                    background-color: $colorFont;
+                    background-image: linear-gradient($colorPrincipal, #fe9090);
                     padding: 5px;
 
                     .accordion-body {
