@@ -1,4 +1,7 @@
 <?php
+ error_reporting(E_ALL);
+ ini_set('display_errors', 1);
+
 /* Conetactar mi form con el server */
 $nombre = $_POST ['nombre'];
 $mail = $_POST ['email'];
@@ -20,10 +23,9 @@ $mensaje .= "Enviado el " . date('d/m/Y', time());
 $para = 'cnmonsalvo@gmail.com'; /* Donde llegan los msj */
 $asunto = 'Mensaje de mi sitio web'; /* El asunto que llegan de los mails */
 
-/* A quien lo envía, el título, el msj y header para añadir */
-mail($para, $asunto, utf8_decode($mensaje), $header);
+/* A quien lo envía, el título, el msj */
+mail($para, $asunto, utf8_decode($mensaje));
 
 /* Redirección al mandar el form */
 header('Location:exito.html');
-
 ?>
