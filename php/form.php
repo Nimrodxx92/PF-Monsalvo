@@ -1,31 +1,41 @@
 <?php
- error_reporting(E_ALL);
- ini_set('display_errors', 1);
+/* Dirección de correo electrónico a la que se enviará el formulario */
+$to_email = 'sideralis.design@gmail.com';
 
-/* Conetactar mi form con el server */
-$nombre = $_POST ['nombre'];
-$mail = $_POST ['email'];
-$asunto = $_POST ['asunto'];
-$telefono = $_POST ['telefono'];
-$mensaje = $_POST ['mensaje'];
+/* Verificar si se envió el formulario */
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  /* Obtener los datos del formulario */
+  $nombre = $_POST['nombre'];
+  $email = $_POST['email'];
+  $telefono = $_POST['telefono'];
+  $consulta = $_POST['mensaje'];
 
-/* Mostrar texto plano */
-$header .= "Content-Type: text/plain";
+  /* Verificar si todos los campos están completos */
+  if (!empty($nombre) && !empty($email) && !empty($telefono) && !empty($consulta)) {
+    /* Enviar el formulario por correo electrónico */
+    sendFormEmail($nombre, $email, $telefono, $consulta);
+    echo '<h1 class="titleForms">Gracias por contactarte con nosotros.</h1>';
+    echo '<p class="subForms">Serás redirigido al inicio en unos segundos...</p>';
+    echo '<script>setTimeout(function() { window.location.href = "../index.html"; }, 3000);</script>';
+    exit(); /* Terminar la ejecución del script después de la redirección */
+  } else {
+    echo 'Por favor, complete todos los campos del formulario.';
+  }
+}
 
-/* Como llegan los email de las personas */
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . ",\r\n";
-$mensaje .= "Su teléfono es: " . $telefono . "\r\n";
-$mensaje .= "El asunto es: " . $asunto . ",\r\n";
-$mensaje .= "Mensaje: " . $_POST . ['mensaje'] ",\r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+/* Función para enviar el formulario por correo electrónico */
+function sendFormEmail($nombre, $email, $telefono, $consulta) {
+  global $to_email;
 
-$para = 'cnmonsalvo@gmail.com'; /* Donde llegan los msj */
-$asunto = 'Mensaje de mi sitio web'; /* El asunto que llegan de los mails */
+  $subject = 'Nuevo formulario de contacto';
+  $message = "Se ha recibido un nuevo formulario de contacto:\n\n";
+  $message .= "Nombre: $nombre\n";
+  $message .= "Email: $email\n";
+  $message .= "Teléfono: $telefono\n";
+  $message .= "Consulta:\n$consulta";
 
-/* A quien lo envía, el título, el msj */
-mail($para, $asunto, utf8_decode($mensaje));
-
-/* Redirección al mandar el form */
-header('Location:exito.html');
+  /* Enviar el correo electrónico del formulario */
+  mail($to_email, $subject, $message);
+}
 ?>
+ 

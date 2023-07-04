@@ -38,7 +38,7 @@
             position: relative;
 
             &:hover {
-                animation: gallery 2s ease 0s 1 normal forwards;
+                animation: gallery 0.8s ease 0s 1 normal forwards;
             }
 
             img {
@@ -72,15 +72,17 @@
     .botones-catalogo {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
         .btnCatalog {
-            background-image: linear-gradient(225deg, rgb(11, 188, 233) 0%, rgb(255, 255, 255), rgb(49, 2, 51) 100%);
+            background-image: linear-gradient($colorPrincipal, #fe9090 100%);
             border: 1px solid white;
             border-radius: 15px;
             padding: 10px 40px;
             text-align: center;
             margin: 20px 20px;
-            color: rgb(0, 0, 0);
+            color: rgb(53, 3, 53);
             font-weight: bold;
         }
     }

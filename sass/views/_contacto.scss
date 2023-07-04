@@ -86,12 +86,13 @@
             }
         }
 
-        input[type="button"] {
+        .button_susc {
             background-color: $colorPrincipal;
             color: #ffffff;
             width: 150px;
             height: 40px;
             border: none;
+            border-radius: 8px;
 
             &:hover {
                 background-color: #8d0354;

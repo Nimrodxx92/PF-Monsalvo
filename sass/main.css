@@ -295,7 +295,7 @@
   position: relative;
 }
 #catalogo .gallery .gallery-item:hover {
-  animation: gallery 2s ease 0s 1 normal forwards;
+  animation: gallery 0.8s ease 0s 1 normal forwards;
 }
 #catalogo .gallery .gallery-item img {
   width: 100%;
@@ -323,15 +323,17 @@
 #catalogo .botones-catalogo {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #catalogo .botones-catalogo .btnCatalog {
-  background-image: linear-gradient(225deg, rgb(11, 188, 233) 0%, rgb(255, 255, 255), rgb(49, 2, 51) 100%);
+  background-image: linear-gradient(#f81793, #fe9090 100%);
   border: 1px solid white;
   border-radius: 15px;
   padding: 10px 40px;
   text-align: center;
   margin: 20px 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(53, 3, 53);
   font-weight: bold;
 }
 #catalogo .modal .modal-dialog .modal-content {
@@ -577,14 +579,15 @@
   outline: none;
   box-shadow: 0 0 10px #fe90af;
 }
-#contacto .items-formulario input[type=button] {
+#contacto .items-formulario .button_susc {
   background-color: #f81793;
   color: #ffffff;
   width: 150px;
   height: 40px;
   border: none;
+  border-radius: 8px;
 }
-#contacto .items-formulario input[type=button]:hover {
+#contacto .items-formulario .button_susc:hover {
   background-color: #8d0354;
 }
 #contacto .items-formulario input::-moz-placeholder, #contacto .items-formulario textarea::-moz-placeholder {
@@ -1037,37 +1040,12 @@
 /* Gallery */
 @keyframes gallery {
   0% {
-    transform: translate(0);
-  }
-  10% {
-    transform: translate(-2px, -2px);
-  }
-  20% {
-    transform: translate(2px, -2px);
-  }
-  30% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(2px, 2px);
-  }
-  50% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, -2px);
-  }
-  70% {
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    transform: translate(-2px, -2px);
-  }
-  90% {
-    transform: translate(2px, -2px);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
   }
   100% {
-    transform: translate(0);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
   }
 }
 /* Botón Whatsapp */
