@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (!empty($nombre) && !empty($email) && !empty($telefono) && !empty($consulta)) {
     /* Enviar el formulario por correo electrónico */
     sendFormEmail($nombre, $email, $telefono, $consulta);
-    echo '<h1 class="titleForms">Gracias por contactarte con nosotros.</h1>';
-    echo '<p class="subForms">Serás redirigido al inicio en unos segundos...</p>';
+    echo '<h1>Gracias por contactarte con nosotros.</h1>';
+    echo '<p>Serás redirigido al inicio en unos segundos...</p>';
     echo '<script>setTimeout(function() { window.location.href = "../index.html"; }, 3000);</script>';
     exit(); /* Terminar la ejecución del script después de la redirección */
   } else {

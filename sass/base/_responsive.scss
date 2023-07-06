@@ -6,6 +6,7 @@
                 .logo {
                     img {
                         width: 115px;
+                        margin: 0 10px;
                     }
                 }
             }
@@ -19,6 +20,7 @@
             .navbar-nav {
                 .nav-item {
                     margin-top: 20px;
+
                     .nav-link {
                         text-align: end;
                     }
@@ -308,11 +310,11 @@
             .gallery-item {
                 h3 {
                     text-align: center;
-                    font-size: 0.8em;
+                    font-size: 1.2em;
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 1em;
                     top: 5%;
                     right: 15px;
                     width: 30%;
@@ -338,11 +340,11 @@
             .gallery-item {
                 h3 {
                     text-align: center;
-                    font-size: 0.9em;
+                    font-size: 1em;
                 }
 
                 p {
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                     top: 5%;
                     right: 15px;
                     width: 29%;
@@ -429,7 +431,7 @@
         .formulas {
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 80%;
             margin: 0 auto;
             border-radius: 0;
             margin-block-end: 40px;
@@ -455,6 +457,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            margin: 20px;
 
             .txt {
                 font-size: 18px;

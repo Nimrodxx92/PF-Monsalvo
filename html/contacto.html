@@ -58,8 +58,8 @@
     </div>
     <section class="formulas">
       <div class="datos">
-        <p>sideralis@gmail.com</p>
-        <p>011-2504-3150 (Solo whatsapp)</p>
+        <p>sideralis.design@gmail.com</p>
+        <p>011-6226-9925 (Solo whatsapp)</p>
         <p>Horarios de atención: Lunes a viernes de 8hs a 17hs.</p>
         <h3>Nuestras redes sociales</h3>
         <div class="redes-contacto">
@@ -80,7 +80,7 @@
         <input type="telefono" name="telefono" id="telefono" placeholder="Ingrese su teléfono">
         <label for="consulta">Consultas</label>
         <textarea name="mensaje" id="consulta" cols="30" rows="10"></textarea>
-        <button type="submit" class="button_susc">Suscribite</button>
+        <button type="submit" class="button_susc">Enviar</button>
       </form>
     </section>
     <section class="newsletter"> <!-- Newslatter propio -->
@@ -88,7 +88,8 @@
       <p>Suscribite para recibir ofertas y novedades en tu email</p>
       <div class="form-container">
         <form action="../php/newslatter.php" id="footer-newsletter" role="form" method="POST">
-          <input type="email" name="email" class="input-large" placeholder="Ingrese su email">
+          <input type="email" name="email" class="input-large" placeholder="Ingrese su email" required
+            autocomplete="email">
           <button type="submit">Suscribite</button>
         </form>
       </div>

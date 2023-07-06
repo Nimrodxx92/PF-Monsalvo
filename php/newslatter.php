@@ -14,9 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
   }
 
-  /* Guardar el correo electrónico en un archivo o base de datos */
-  saveEmailToFile($email);
-
   /* Enviar notificación por correo electrónico */
   sendNotificationEmail($email);
 
@@ -37,9 +34,3 @@ function sendNotificationEmail($email) {
   mail($to_email, $subject, $message);
 }
 ?>
-
-
-
-
-
-

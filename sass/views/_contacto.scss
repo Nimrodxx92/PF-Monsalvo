@@ -61,7 +61,7 @@
     .items-formulario {
         display: flex;
         flex-direction: column;
-        background-image: url(../images/fondos/space-space-art-nebula-atmosphere-universe-astronomy-76715-wallhere.com.png);
+        background-image: url(../images/fondos/univ-contact.jpg);
         padding: 50px;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -89,13 +89,17 @@
         .button_susc {
             background-color: $colorPrincipal;
             color: #ffffff;
+            font-weight: bold;
             width: 150px;
             height: 40px;
             border: none;
             border-radius: 8px;
 
             &:hover {
-                background-color: #8d0354;
+                background-image: linear-gradient(#fe9090, rgb(204, 166, 199));
+                color: rgb(10, 10, 58);
+                font-weight: bold;
+                text-decoration: line-through;
             }
         }
 
